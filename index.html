@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Catálogo de Ventas</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="./assets/logo.svg" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li class="active"><a href="#"><i class="icon">📊</i> Dashboard</a></li>
+          <li><a href="#"><i class="icon">📦</i> Productos</a></li>
+          <li><a href="#"><i class="icon">💰</i> Ventas</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header class="header">
+        <h1>Catálogo de Productos</h1>
+        <button id="add-product" class="btn-primary">+ Añadir Producto</button>
+      </header>
+
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Productos</h3>
+          <p id="total-products">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Ventas Hoy</h3>
+          <p>$<span id="daily-sales">0</span></p>
+        </div>
+      </section>
+
+      <section class="product-list">
+        <table id="products-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Stock</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Datos dinámicos desde JS -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="./scripts/data.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
