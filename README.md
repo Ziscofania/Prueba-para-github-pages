@@ -12,4 +12,5 @@ Dashboard interactivo para gestión de productos y ventas, usando GitHub Pages.
 ## 🔧 Cómo probar localmente
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/dashboard-ventas.git
+   https://github.com/Ziscofania/Prueba-para-github-pages.git
+   ```
